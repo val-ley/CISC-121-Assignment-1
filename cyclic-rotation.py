@@ -1,23 +1,10 @@
-"""
-Pseudo code for cyclic rotation of an array:
-A is given
-K is given
-
-while K > 0
-save first value of A
-then deleyte first value of A and append it into last index of A
-K--
-
-output the new A
-"""
-
 A = [3, 8, 9, 7, 6]
 K = 3
 new_A = A
 
-while (K > 0):
-    last = new_A.pop()       
-    new_A.insert(0, last)    
+while (K > 0): #loop K times
+    last = new_A.pop() #save last number in A  
+    new_A.insert(0, last) #insert last number at the end of A
     K = K - 1
 
-print(new_A)  
+print(new_A) #output the updated A array

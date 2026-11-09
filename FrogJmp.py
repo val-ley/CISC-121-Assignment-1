@@ -1,24 +1,10 @@
-"""
-input x
-input y
-input d
+X = 10 #frog position
+Y = 85 #target position
+D = 30 #jump increment
 
-value number of jumps = 0
+jump_number = 0 # number of jumps the frog has taken
 
-while x> y
-x+= x +d
-number of jumps ++
-output number of jumps
-
-"""
-
-X = 10
-Y = 85
-D = 30
-
-jump_number = 0
-
-while X<Y:
-    X+=D
-    jump_number+= 1
+while X<Y: #while frog position is smaller than target position
+    X+=D # increase frog position by jump increment
+    jump_number+= 1 #count number of jumps the frog took
 print("Number of jumps the frog took: " + str(jump_number))
